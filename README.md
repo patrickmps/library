@@ -19,7 +19,7 @@
 
 ## Sobre
 
-Este monorepo integra os projetos backend e frontend da Library, uma aplicação simples dedicada à catalogação e recomendação de livros. Desenvolvida como um exercício prático para fixar os conhecimentos teóricos em GraphQL, a aplicação abrange uma alguns de conceitos e tecnologias relevantes para o ecossistema GraphQL.
+Este monorepo integra os projetos backend e frontend da Library, uma aplicação simples dedicada à catalogação e recomendação de livros. Desenvolvida como um exercício prático para fixar os conhecimentos teóricos em GraphQL, a aplicação abrange alguns conceitos e tecnologias relevantes para o ecossistema GraphQL.
 
 **Principais Pontos Abordados:**
 * **Apollo Server:** Implementação do servidor GraphQL usando o Apollo Server, proporcionando uma base sólida para a API backend da Library;
