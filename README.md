@@ -1,4 +1,4 @@
-# Library
+# 📖Library
 
 <div align="center">
   
@@ -19,7 +19,42 @@
 
 ## Sobre
 
+Este monorepo integra os projetos backend e frontend da Library, uma aplicação simples dedicada à catalogação e recomendação de livros. Desenvolvida como um exercício prático para fixar os conhecimentos teóricos em GraphQL, a aplicação abrange uma alguns de conceitos e tecnologias relevantes para o ecossistema GraphQL.
 
+**Principais Pontos Abordados:**
+* **Apollo Server:** Implementação do servidor GraphQL usando o Apollo Server, proporcionando uma base sólida para a API backend da Library;
+
+* **Schemas:** Definição estruturada dos tipos de dados e suas relações;
+
+* **Queries e Mutations:** Utilização eficaz de queries para leitura de dados e mutations para alteração de dados, permitindo interações com o backend;
+
+* **Resolvers:** Implementação de resolvers para cada tipo de dado, conectando as queries e mutations definidas nos schemas com a lógica de negócios do backend;
+
+* **Apollo Client com ReactJS:** Integração suave entre o frontend e o backend usando o Apollo Client no ambiente ReactJS;
+
+* **Cache:** Exploração do sistema de cache do Apollo Client para otimização do desempenho, minimizando as requisições ao servidor e melhorando a responsividade da aplicação;
+
+* **Fragments:** Uso de fragments para modularizar e reutilizar partes das queries, melhorando a manutenibilidade e a legibilidade do código;
+
+* **Subscriptions:** Integração de subscriptions para permitir atualizações em tempo real, proporcionando uma experiência mais dinâmica e interativa aos usuários.
+
+## Variáveis de Ambiente
+
+Faça uma copia do .env.example e edite com suas configurações:
+
+```bash
+  cp .env.example .env
+```
+
+Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+
+`MONGODB_URI` - uri do banco MongoDB
+
+`PORT` - porta na qual irá rodar o server, por padrão está 4000
+
+`SECRET` - string usada para gerar o token JWT
+
+Obs: Como o foco do projeto foi o estudo do GraphQL, foi deixado de lado a autenticação e o password foi padronizado para "secret".
 
 ## Rodando localmente
 
@@ -28,21 +63,47 @@ Clone o projeto
 ```bash
   git clone https://github.com/patrickmps/library.git
 ```
+### Backend
 
-...
+Entre no diretório do backend
 
-## Variáveis de Ambiente
+```bash
+  cd backend
+```
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+Instale as dependências
 
-`MONGODB_URI` - uri do banco MongoDB
+```bash
 
-`PORT` - porta na qual irá rodar o server, por padrão está 4000
+  npm install
+```
 
-`TEST_MONGODB_URI` - uri do banco MongoDB para testes
+Inicie o servidor
 
-`SECRET` - string usada para gerar o token JWT
+```bash
+  npm run dev
+```
+É possível testar a API pelo Apollo Studio Explorer pelo navegador acessando a url do server `http://localhost:4000`.
 
-## Documentação da API
+### Frontend
 
-...
+Entre no diretório do frontend
+
+```bash
+  cd frontend
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+Agora com o backend e o frontend rodando basta acessar o endereço `http://localhost:5173` e testar a aplicação.
+
+<div align="center">⚡</div>
